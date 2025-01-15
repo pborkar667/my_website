@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persoanl Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- <script src = "http://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Font Awesome -->
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+    
+
+</head>
+<!-- ---------------------------------------------Header section  -->
+<body>
+    <!-- <div class = "ccontainer">
+        <nav id = "header">
+            <div class = "nav-logo">
+                <p class = "nav-name">Pranav</p>
+            </div>
+            <div class = " nav_menu" id ="myNavMenu"> 
+                <ul class="nav_menu_list">
+                    <li class ="nav_list">
+                        <a href="#Home" class ="nav-link">Home</a>
+                        <div class = "circle"></div>
+                    </li>
+                    <li class ="nav_list">
+                        <a href="#About" class ="nav-link">About</a>
+                        <div class = "circle"></div>
+                    </li>
+                    <li class ="nav_list">
+                        <a href="#Experience" class ="nav-link">Experience</a>
+                        <div class = "circle"></div>
+                    </li>
+                    <li class ="nav_list">
+                        <a href="#Contact" class ="nav-link">Contact</a>
+                        <div class = "circle"></div>
+                    </li>
+            
+                </ul>
+            </div> -->
+
+            <div class="ccontainer">
+                <nav id="header">
+                    <div class="nav-logo">
+                        <p class="nav-name">Pranav</p>
+                    </div>
+                    <div class="menu-icon" id="menuIcon" onclick="toggleNavMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="nav_menu" id="myNavMenu">
+                        <ul class="nav_menu_list">
+                            <li class="nav_list">
+                                <a href="#Home" class="nav-link">Home</a>
+                                <div class="circle"></div>
+                            </li>
+                            <li class="nav_list">
+                                <a href="#About" class="nav-link">About</a>
+                                <div class="circle"></div>
+                            </li>
+                            <li class="nav_list">
+                                <a href="#Projects" class="nav-link">Projects</a>
+                                <div class="circle"></div>
+                            </li>
+                            <li class="nav_list">
+                                <a href="#Contact" class="nav-link">Contact</a>
+                                <div class="circle"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            
+            <script>
+                function toggleNavMenu() {
+                const navMenu = document.getElementById("myNavMenu");
+                const menuIcon = document.getElementById("menuIcon");
+                navMenu.classList.toggle("active");
+                menuIcon.classList.toggle("active");
+            }
+
+            </script>
+            
+
+
+
+            <!----Dark Mode-->
+            <div class = "mode">
+                <div class="moon-sun" id="toggle-switch">
+                    <i class = "fa fa-moon" id = "moon"></i>
+                    <i class = "fa fa-sun" id="sun"></i>
+                </div>
+            </div>
+        
+        <!---main-->
+        <main class="wrapper">
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class ="hello">
+                        <p>Hello I,m  </p>
+                    </div>
+                    <div class="featured-name">
+                        <span class="typedText"></span>
+                    </div>
+                    <div class = "text-info">
+                        <p>My name is Pranav Borkar, Solving Real-World Business Problem with Innovation and Precision.</p>
+                    </div>
+                    <div class="text-btn">
+                        <!-- <button class="btn hire-btn">Contact</button> -->
+                        <button class="btn hire-btn" onclick="window.location.href='mailto:pranavborkar776@gmail.com';">Contact</button>
+                        <a href="Pranav_Borkar_CV.pdf" download="Pranav_Borkar_Resume" class="btn">
+                            Download CV<i class="uil uil-file"></i>
+                        </a>
+                        
+                    </div>
+                    <div class = "socical_icons">
+                        <div class="icon_circle"></div>
+                        <!-- <div class="social-icons"> Corrected class name from 'Socail-icons' to 'social-icons' -->
+                            <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://instagram.com/"><i class="fa-brands fa-square-instagram"></i></a> <!-- Added link to Instagram -->
+                            <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a> <!-- Added link to LinkedIn -->
+                            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a> <!-- Added link to Twitter -->
+                        </div>
+                    </div>
+                    <div class="featured-image">
+                        <div class="image">
+                            <img src="Profile.JPG" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+    <div id="About">
+        <div class="container">
+            <h1 class="sub-title">About Me</h1>
+            <p>Welcome to my portfolio. Here's an overview of my skills, experience, and education.<br> <br>  Hi there! I’m Pranav, a self-proclaimed data detective currently decoding the mysteries of information systems at NYU. <br> Armed with an MS in Management and Systems (Database Technologies concentration), I’m on a mission to turn tangled data into actionable insights. Think of me as the Sherlock Holmes of spreadsheets, but with fewer deerstalker hats and more SQL queries.
+
+                My journey began with circuits and semiconductors during my undergraduate days in Electronics Engineering at GH Raisoni College of Engineering. There, I learned the magic of solving puzzles — whether they involved electrical currents or tricky business challenges. Post-graduation, I ventured into the corporate world as a Programmer Analyst at Cognizant. From January 2022 to June 2023, I honed my skills, tamed unruly datasets, and occasionally made friends with APIs.
+                
+                When I’m not crunching numbers or building dashboards, you’ll probably find me exploring innovative ways to simplify complex data or daydreaming about making a better recommendation engine for my coffee shop runs. If data were a language, I’d be fluent in storytelling through analytics, with just the right amount of humor sprinkled in.
+                
+                Let’s connect — because every dataset has a story, and I’m here to help uncover it! 🚀</p>
+    
+            <div class="timeline">
+                Education Section
+                <div class="timeline-item">
+                    <div class="timeline-content" id="skills">
+                        <h2>Education</h2>
+                        <ul>
+                            <li><span>New York University (NYU), United States</span><br>MS in Management of Information Systems<br>2023-2025</li>
+                            <!-- <li><span>Bachelor of Engineering</span><br>Electronics Engineering</li> -->
+                            <li><span>G H Raisoni College of Engineering, Nagpur</span><br>Bachelor of Electronics Engineering<br>2018-2022</li>
+                        </ul>
+                    </div>
+                </div>
+    
+                Experience  Section
+                <div class="timeline-item">
+                    <div class="timeline-content" id="experience">
+                        <h2>Experience</h2>
+                        <ul>
+                            <li><span>Cognizant Technology Solutions</span><br>Programmer Analyst<br>June 2022 - June 2023</li>
+                            <li><span>Where I Work ?</span><br>•	Developed and executed SQL queries to ensure ETL code was in adherence to business requirements.<br>
+                                •	Extracted, cleaned, processed business data using Excel & Python libraries<br>
+                                •	Engaged with diverse client base, identified critical pain points, and devised strategic recommendations resulting in a 40% reduction in customer support issues and a 25% increase in customer satisfaction scores.<br>
+                                •	Spearheaded seamless communication between developers and clients, ensuring efficient delivery of solutions leading to a 30% increase in on-time project completion and a 20% improvement in client retention rates.<br> 
+                                •	Designed and automated robust and meaningful MTD, QTY and YTD reports<br> 
+                                •	Generated regular and ad-hoc data reports, translating complex datasets into clean and concise information for decision-making processes.<br>
+                                •	Developed and maintained interactive and insightful dashboards to provide real-time visibility into key operational metrics for the Operations team.<br> 
+                                •	Analyzed threads received by company’s executives and provided sentiment analysis based on gender, location and levels to gather valuable insights, identify trends, and provide actionable recommendations for operational improvements.
+                                </li>
+                                <li><br> Programmer Analyst Trainee <br>January 2022 - June 2022 <br><span><br>Where I Work ? </span><br> 
+                                    •	Conducted comprehensive data analysis and interpreted market trends to provide actionable insights that facilitated
+                                    strategic decision-making, contributing to a 15% increase in revenue.<br>
+                                    •	Administered Oracle and MySQL databases, ensuring seamless compatibility with RTC applications.<br>
+                                    •	Developed dashboards using PowerBi and Tableau to support management in making informed decisions.
+                                    </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                Skills   Section
+                <div class="timeline-item">
+                    <div class="timeline-content" id="education">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li><span>Programming Languages</span><br>Python, Apache Spark, PySpark, Kafka, ETL</li>
+                            <li><span>Database</span><br>MySQL, PostgreSQL, Oracle</li>
+                            <li><span>Cloud</span><br>GCP (Certified), AWS</li>
+                            <LI><span>Visualization Tools</span><br>Power BI, Tableau</LI>
+                            <!-- <li><span>Soft Skills</span><br>Communication, Time Management, Multi-Tasking</li> -->
+                            <li><span>Other</span><br>
+                                Project Management, Agile & Waterfall Methodologies, Strategic Thinking, Data Driven Decision Making, Customer Feedback Integration, Customer Service, Leadership, Excellent Communication, Storytelling. </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+    </script>
+    
+<script>
+    // Function to make the timeline items visible on scroll
+function revealTimelineItems() {
+    const items = document.querySelectorAll('.timeline-item');
+    const windowHeight = window.innerHeight;
+
+    items.forEach(function(item) {
+        const itemTop = item.getBoundingClientRect().top;
+
+        if (itemTop < windowHeight - 150) {
+            item.classList.add('visible');
+        }
+    });
+}
+
+window.addEventListener('scroll', revealTimelineItems);
+window.onload = revealTimelineItems; // Trigger scroll check when page loads
+
+</script>    
+    
+    <div id = "serivces">
+        <div class = "container">
+            <h1 class="sub-title">Projects</h1>
+            <div class = "serivces-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <a href="https://github.com/pborkar667/HomeDepotLowesAnalysis" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Data Science</h2>
+                    <a href="https://github.com/pborkar667/Clustering" target="_blank">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-app-store"></i>
+                    <h2>Data Analyst</h2>
+                    <a href="https://github.com/pborkar667/HomeDepotLowesAnalysis" target="_blank">Learn more</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+   </section> 
+            </main>
+            <footer>
+                <div class="middle-footer">
+                    <ul class="footer-menu">
+                        <li class="footer_menu_list">
+                            <a href="#Home">Home</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#Project">Projects</a>
+                        </li>
+                        <!-- <li class="footer_menu_list">
+                            <a href="#Contact">Contact</a>
+                        </li> -->
+                        <li class="footer_menu_list">
+                            <a href="mailto:pranavborkar776@gmail.com">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-social-iconns">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com/"><i class="fa-brands fa-square-instagram"></i></a> <!-- Added link to Instagram -->
+                    <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a> <!-- Added link to LinkedIn -->
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a> <!-- Added link to Twitter -->
+                
+                </div>
+                <div class="botton-footer">
+                    <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Pranav Borkar</a>-All right reserved 2024</p>
+                </div>
+            </footer>
+            </div>
+            
+        
+
+    </div>
+    <script>
+   
+
+/*----Dark Mode---*/
+
+const body = document.querySelector("body"), 
+toggleSwitch =document.getElementById("toggle-switch");
+
+toggleSwitch.addEventListener("click", ()=> {
+    body.classList.toggle("dark");
+});
+
+/*----Type Effect---*/
+var typingEffect = new Typed(".typedText", {
+    strings:["Data Engineer", "Data Analyst","Business Analsyt","Developer"],
+
+
+    loop:true,
+    typeSpeed: 100,
+    backSpeed: 80,
+    backDeley: 2000,
+})
+// Function to toggle the menu
+function toggleNavMenu() {
+    const menu = document.getElementById("myNavMenu");
+    menu.classList.toggle("active"); // Toggle the 'active' class to show/hide the menu
+}
+
+// Function to close the menu after clicking a link
+function closeNavMenuOnLinkClick() {
+    const navLinks = document.querySelectorAll(".nav-link"); // Select all nav links
+    const menu = document.getElementById("myNavMenu");
+    
+    navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            menu.classList.remove("active"); // Close the menu when a link is clicked
+        });
+    });
+}
+
+// Call the function to add click event listeners to the nav links
+closeNavMenuOnLinkClick();
+
+
+    </script>
+
+</body>
+</html>
